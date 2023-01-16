@@ -67,12 +67,23 @@ img{
     src: url('/font/Roboto-BlackItalic.ttf');
 }
 
+@font-face{
+    font-family: Roboto-Regular;
+    src: url('/font/Roboto-Regular.ttf');
+}
+
 .wrap{
-	max-width: 100%;
+	width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto 0;
 }
+/* 
+@media (min-width: 1080px) {
+    .wrap{
+        width: 100%;
+    }
+} */
 
 @media (max-width: 768px) {
 	.area1 img{
@@ -123,25 +134,32 @@ img{
 }
 
 .home_header{
-    position: relative;
-}
-
-.header_textBox{
-    position: absolute;
-    color: #FFF;
-    top:35%;
-    right: 23.21%;
+    background: url("img/home-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: end;
+    width: 100%;
+    height: 787px;
 }
 
-.header_textBox .font1{
+.textBox{
+    margin-right: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.font1{
 	font-family: NotoSansTC-Regular;
     font-size: 36px;
     color:#650300;
     line-height: 54px;
 }
 
-.header_textBox .font2{
+.font2{
     font-family: NotoSansTC-Bold;
     font-size:64px;
     line-height: 96px;
@@ -153,17 +171,18 @@ img{
     font-size:20px;
     line-height: 30px;
     color:#FFF;
-    border: 1px solid #AA0601;
-    width:fit-content;
+    border: none;
     background-color: #AA0601;
     padding: 6px;
-    margin-left:83%
+    width: fit-content;
+    margin-left: 83%;
 }
 
 .title{
     font-family: NotoSansTC-Bold;
     color:#650300;
     font-size:48px;
+    line-height: 72px;
 }
 
 .area2{
@@ -183,8 +202,6 @@ img{
 .area2_box{
     display: flex;
     justify-content: center;
-    padding-left: 312px;
-    padding-right: 312px;
 }
 
 .area2_sBox{
@@ -193,9 +210,10 @@ img{
     align-items: center;
     margin-left: 24px;
     width: 306px;
+    height: 250px;
 }
 
-.area2 ul{
+.area2 ul, .area3 ul, .area4 ul, .area5 ul{
     padding-top: 32.08px;
 }
 
@@ -215,3 +233,272 @@ img{
     line-height: 24px;
 }
 
+.area3{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.area3_sBox{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.area3_sBox img{
+    width: 416px;
+    height: 416px;
+}
+
+.area3_sBox .title{
+    color:#AA0601;
+    line-height: 72px;
+    font-family: Roboto-BlackItalic;
+}
+
+.area4{
+    background-image: url("img/index-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.area4_sBox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 648px;
+    height: auto;
+    background: #FFF;
+}
+
+.area4 .title{
+    color:#FFF;
+}
+
+.area4_sBox .title{
+    line-height: 72px;
+    font-family: Roboto-BlackItalic;
+    border: #FFF solid 1px;
+    font-size: 48px;
+    color:#AA0601;
+} 
+
+.area5{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.area5 .title{
+    text-align: center;
+}
+
+.area5_sBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    width: 306px;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+}
+
+.area5_sBox img{
+    height: auto;
+}
+
+.area5_sBox .box{
+    padding: 16px;
+}
+
+.customer{
+    font-size: 16px;
+    font-family: NotoSansTC-Medium;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.area5_sBox .discription{
+    font-size: 16px;
+    font-family: NotoSansTC-Regular;
+    line-height: 24px;
+    padding-bottom: 72px;
+}
+
+.area5_sBox .date{
+    font-family: NotoSansTC-Regular;
+    font-size: 14px;
+    line-height: 21px;
+    color: #707070;
+}
+
+.area6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #FBF2F2;
+}
+
+.area6 .title{
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.area6 .discription{
+    font-size: 20px;
+    padding-bottom: 24px;
+}
+
+.area6 .box{
+    width: 636px;
+}
+
+.area6 li{
+    font-family: NotoSansTC-Regular;
+}
+
+.area6 div{
+    padding-bottom: 16px;
+}
+
+.area6 div span{
+    display:block;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.area6 input[type='text']{
+    width: 100%;
+    height:36px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+.area6 .box2{
+    text-align: center;
+}
+
+.area6 button{
+    margin-top: 48px;
+    background: #AA0601;
+    border: none;
+    color:#FFF;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    width: 416px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.area7{
+    background: #AA0601;
+    padding-left: 312px;
+    padding-right: 312px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.area7 .box1{
+    padding-top: 48px;
+}
+
+.area7 .box1 div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.area7 li{
+    display: inline;
+    color:#FFF;
+    padding-right: 48px;
+    font-size:16px;
+    line-height: 24px;
+    font-family: NotoSansTC-Regular;
+}
+
+.area7 .li2{
+    display: inline;
+    padding-right: 32px;
+}
+
+.area7 li img{
+    width:48px;
+    height: 48px;
+}
+
+.area7 .box2{
+    margin-bottom: 11px;
+    border-bottom: #FFF solid 1px;
+}
+
+.box2 div{
+    display: flex;
+    align-items: center;
+}
+
+.area7 .box2 p{
+    display:inline;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.area7 .li3{
+    color:#FFF;
+    margin-bottom: 8px;
+    font-family: NotoSansTC-Regular;
+    display: block;
+}
+
+.area7 .li3 img{
+    width: 36px;
+    height: 36px;
+    padding-right: 22px;
+}
+
+.area7 .li4{
+    color:#FFF;
+    margin-bottom: 32px;
+    font-family: NotoSansTC-Regular;
+}
+
+.area7 .li4 img{
+    width: 40px;
+    height: 32px;
+    padding-right: 20px;
+}
+
+.area7 .box3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.box3 .t1{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Roboto-Regular;
+    color:#FFF;
+}
+
+.box3 div p{
+    font-size: 14px;
+    color:#FFF;
+    padding-left: 48px;
+    display: inline;
+    font-family: NotoSansTC-Regular;
+}
