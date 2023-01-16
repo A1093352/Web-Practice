@@ -49,27 +49,27 @@ img{
 
 @font-face{
     font-family: NotoSansTC-Regular;
-    src: url('/font/NotoSansTC-Regular.otf');
+    src: url('./font/NotoSansTC-Regular.otf');
 }
 
 @font-face{
     font-family: NotoSansTC-Bold;
-    src: url('/font/NotoSansTC-Bold.otf');
+    src: url('./font/NotoSansTC-Bold.otf');
 }
 
 @font-face{
     font-family: NotoSansTC-Medium;
-    src: url('/font/NotoSansTC-Medium.otf');
+    src: url('./font/NotoSansTC-Medium.otf');
 }
 
 @font-face{
     font-family: Roboto-BlackItalic;
-    src: url('/font/Roboto-BlackItalic.ttf');
+    src: url('./font/Roboto-BlackItalic.ttf');
 }
 
 @font-face{
     font-family: Roboto-Regular;
-    src: url('/font/Roboto-Regular.ttf');
+    src: url('./font/Roboto-Regular.ttf');
 }
 
 .wrap{
