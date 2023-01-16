@@ -83,7 +83,7 @@ img{
     .img1{
 		background: url(home-header-sm.png);
 	}
-    .area1_box{
+    .area1 li{
         display:none;
     }
 }
