@@ -47,165 +47,71 @@ img{
 	height: auto;
 }
 
+@font-face{
+    font-family: NotoSansTC-Regular;
+    src: url('/font/NotoSansTC-Regular.otf');
+}
+
+@font-face{
+    font-family: NotoSansTC-Bold;
+    src: url('/font/NotoSansTC-Bold.otf');
+}
+
+@font-face{
+    font-family: NotoSansTC-Medium;
+    src: url('/font/NotoSansTC-Medium.otf');
+}
+
+@font-face{
+    font-family: Roboto-BlackItalic;
+    src: url('/font/Roboto-BlackItalic.ttf');
+}
+
+.wrap{
+	max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.area1 img{
+        padding-right: 124px;
+    }
+}
+
+@media (max-width: 365px) {
+    .img1{
+		background: url(home-header-sm.png);
+	}
+    .area1_box{
+        display:none;
+    }
+}
+
 .area1{
     background-color: #aa0601;
+	font-family: NotoSansTC-Regular;
+    font-size:20px;
     display:flex;
-    justify-content: flex-end;
-	padding-top: 25px;
-	padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    color:#FFF;
+    height: 80px;
 }
 
-.box2{
-	margin-right: 312px;
+.area1_box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.font1{
-    font-family: '思源黑體 TW';
-	font-size: 20px;
-	line-height: 30px;
-	color: #FFF;
+.area1 li{
+    display: inline;
+    padding-left: 64px;
 }
 
-.font1 p{
-	display:inline;
-	padding-right: 64px;
-}
-
-.area2{
-	display:flex;
-	/* flex-direction: column; */
-	justify-content: center; 
-}
-
-.img1{
-	height: 798px;
-	width:100%;
-	position: relative;
-}
-
-.font2{
-	color: #650300;
-	font-family: '思源黑體 TW';
-	font-size: 36px;
-	line-height: 54px;
-	position: absolute;
-	left: 1107px; 
-	bottom: 296px;
-}
-
-.font3{
-	color: #650300;
-	font-family: '思源黑體 TW';
-	font-size: 64px;
-	line-height: 96px;
-	font-weight: 600;
-	position: absolute;
-	left: 1032px; 
-	bottom: 350px;
-}
-
-.font4{
-	color:#FFF;
-	font-size: 20px;
-	line-height: 30px;
-	position: absolute;
-	left: 1504px; 
-	bottom: 450px;
-	width: 80px;
-	height: 29px;
-	background-color: #aa0601;
-}
-
-.area3{
-	display: flex;
-	flex-direction: column;
-	padding-top: 80px;
-	align-items: center;
-	padding-bottom: 80px;
-}
-
-.font5{
-	color:#650300;
-	font-weight: 600;
-	line-height: 72px;
-	font-size: 48px;
-}
-.area3_1{
-	display: flex;
-	justify-content: center;
-	margin-right: 24px;
-}
-
-.img2{
-	width:83.83px;
-	height:83.83px;
-	padding-bottom: 24.08px;
-}
-
-.areabox1{
-	display: flex;
-	flex-direction: column;
-	width: 306px;
-	align-items: center;
-	margin-left: 24px;
-}
-
-.font6{
-	color:#650300;
-	font-size: 24px;
-	line-height: 36px;
-	text-align: center;
-	padding-bottom: 8px;
-	font-weight: 600;
-	font-family: '思源黑體 TW';
-}
-
-.font7{
-	font-size: 16px;
-	line-height: 24px;
-	font-family: '思源黑體 TW';
-}
-
-.img3{
-	margin-top: 48px;
-	width: 416px;
-	height: 416px;
-}
-
-.areabox2{
-	display: flex;
-	flex-direction: column;
-	width: 416px;
-	align-items: center;
-	margin-left: 24px;
-}
-
-.font8{
-	color: #aa0601;
-	font-size: 48px;
-	line-height: 72px;
-	font-family: 'Roboto';
-	font-weight: 600;
-}
-
-.areabox3{
-	display: flex;
-	flex-direction: column;
-	width: 648px;
-	align-items: center;
-}
-
-.img4{
-	margin-top: 48px;
-	width: 648px;
-	height: 240px;
-}
-
-.area4{
-	background-image: 'index-bg.png';
-	display: flex;
-	flex-direction: column;
-	padding-top: 80px;
-	align-items: center;
-	padding-bottom: 80px;
+.area1 img{
+    width: 80px;
+    height: 48.57px;
+    padding-right: 724px;
 }
