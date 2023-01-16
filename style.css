@@ -71,11 +71,15 @@ img{
 	max-width: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto 0;
 }
 
 @media (max-width: 768px) {
 	.area1 img{
         padding-right: 124px;
+    }
+    .area1_box li{
+        display:none;
     }
 }
 
@@ -83,16 +87,18 @@ img{
     .img1{
 		background: url(home-header-sm.png);
 	}
-    .area1 li{
+    .area1_box li{
         display:none;
     }
 }
 
 .area1{
+    width: 100%;
     background-color: #aa0601;
 	font-family: NotoSansTC-Regular;
     font-size:20px;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color:#FFF;
@@ -115,3 +121,97 @@ img{
     height: 48.57px;
     padding-right: 724px;
 }
+
+.home_header{
+    position: relative;
+}
+
+.header_textBox{
+    position: absolute;
+    color: #FFF;
+    top:35%;
+    right: 23.21%;
+    text-align: end;
+}
+
+.header_textBox .font1{
+	font-family: NotoSansTC-Regular;
+    font-size: 36px;
+    color:#650300;
+    line-height: 54px;
+}
+
+.header_textBox .font2{
+    font-family: NotoSansTC-Bold;
+    font-size:64px;
+    line-height: 96px;
+    color:#650300;
+}
+
+.font3{
+    font-family: NotoSansTC-Medium;
+    font-size:20px;
+    line-height: 30px;
+    color:#FFF;
+    border: 1px solid #AA0601;
+    width:fit-content;
+    background-color: #AA0601;
+    padding: 6px;
+    margin-left:83%
+}
+
+.title{
+    font-family: NotoSansTC-Bold;
+    color:#650300;
+    font-size:48px;
+}
+
+.area2{
+    background-color: #FBF2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.area2 li{
+    display: inline;
+}
+
+.area2_box{
+    display: flex;
+    justify-content: center;
+    padding-left: 312px;
+    padding-right: 312px;
+}
+
+.area2_sBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    width: 306px;
+}
+
+.area2 ul{
+    padding-top: 32.08px;
+}
+
+.area2_sBox img{
+    width: 83.83px;
+    height: 83.83px;
+}
+
+.area2_sBox .title{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.discription{
+    font-family: NotoSansTC-Regular;
+    font-size: 16px;
+    line-height: 24px;
+}
+
