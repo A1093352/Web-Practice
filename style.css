@@ -42,6 +42,11 @@ table {
 	border-spacing: 0;
 }
 
+img{
+	width: 100%;
+	height: auto;
+}
+
 .area1{
     background-color: #aa0601;
     display:flex;
